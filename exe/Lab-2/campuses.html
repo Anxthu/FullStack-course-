@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrita Campuses Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .campus-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.8fr 1fr;
+            grid-template-rows: 250px 250px 250px;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .campus-card {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+
+            height: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .campus-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .campus-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            flex-grow: 1;
+            
+        }
+
+        .campus-card h3 {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        .campus-card p {
+            margin: 0 0 5px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+       
+        .campus-card:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        
+        .campus-card:nth-child(2) {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        
+        .campus-card:nth-child(3) {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        
+        .campus-card:nth-child(4) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        
+        .campus-card:nth-child(5) {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            
+            background-color: #fff;
+            
+            border: none;
+            z-index: 10;
+        }
+
+        .campus-card:nth-child(5) img {
+            
+            height: 100%;
+            max-height: none;
+        }
+
+        
+        .campus-card:nth-child(6) {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        
+        .campus-card:nth-child(7) {
+            grid-column: 3;
+            grid-row: 3;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Amrita Vishwa Vidyapeetham Campuses</h1>
+    <div class="campus-grid">
+        <div class="campus-card">
+            <img src="img\images.jpg" alt="Amritapuri Campus">
+            <h3>Amritapuri</h3>
+            <p>Kerala</p>
+        </div>
+        <div class="campus-card">
+            <img src="img\maincampus.jpeg" alt="Coimbatore Campus">
+            <h3>Coimbatore</h3>
+            <p>Tamil Nadu</p>
+        </div>
+        <div class="campus-card">
+            <img src="img/chenni.jpg" alt="">
+            <h3>Chennai</h3>
+            <p>Tamil Nadu</p>
+        </div>
+        <div class="campus-card">
+            <img src="img\images (1).jpg" alt="Kochi Campus">
+            <h3>Kochi</h3>
+            <p>Kerala</p>
+        </div>
+        <div class="campus-card">
+            <img src="img/Banglore-campus.jpg" alt="Bengaluru Campus">
+            <h3>Bengaluru</h3>
+            <p>Karnataka</p>
+        </div>
+        <div class="campus-card">
+            <img src="img/mysore.jpg" alt="Mysuru Campus">
+            <h3>Mysuru</h3>
+            <p>Karnataka</p>
+        </div>
+        <div class="campus-card">
+            <img src="img/nbElb5oz-amrita-amaravati-campus-banner-2022.jpg" alt="Amaravati">
+            <h3>Amaravati</h3>
+            <p>Andhra Pradesh</p>
+        </div>
+    </div>
+</body>
+
+</html>
