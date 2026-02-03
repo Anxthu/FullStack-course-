@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label>Name</label>
+                <div class="row">
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                </div>
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" id="addressLine" placeholder="Street Address" required>
+                <div class="row three-col">
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="state" placeholder="State" required>
+                    <input type="text" id="zipCode" placeholder="Zip Code" required>
+                </div>
+                <span class="error" id="addressError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="+91 9876543210" required>
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="email@example.com" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" id="dob" required>
+                <span class="error" id="dobError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="message" rows="4" required></textarea>
+                <span class="error" id="messageError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="password" required>
+                <div id="strengthBar"></div>
+                <span id="strengthText"></span>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label id="captchaQuestion"></label>
+                <input type="number" id="captchaAnswer" required>
+                <span class="error" id="captchaError"></span>
+            </div>
+
+            <button type="submit">Submit</button>
+            <p id="formMessage"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
